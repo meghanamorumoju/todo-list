@@ -1,0 +1,16 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+<div className='TodoWrapper'>
+      <TodoForm addTodo={addTodo} />
+      {todos.length !== 0 && todos.map((todo, index) =>
+      (
+
+        <Todo task={todo} key={index} 
+        toggleComplete={toggleComplete}
+        deleteTodo={deleteTodo}
+        editTodo={editTodo}
+        />
+      )
+      )}
+    </div>
